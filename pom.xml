@@ -66,6 +66,12 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>6.0.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>javax.ws.rs</groupId>
       <artifactId>javax.ws.rs-api</artifactId>
       <version>2.1</version>
@@ -133,10 +139,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <slf4j.version>1.7.12</slf4j.version>
-    <jersey.version>2.26</jersey.version>
-    <jetty.version>9.2.13.v20150730</jetty.version>
-    <shiro.version>1.4.2</shiro.version>
-    <jdk.version>1.8</jdk.version>
+    <jersey.version>3.1.5</jersey.version>
+    <jetty.version>11.0.25</jetty.version>
+    <shiro.version>2.0.4</shiro.version>
+    <jdk.version>11.0</jdk.version>
   </properties>
 
   <build>
@@ -178,7 +184,7 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>[${jdk.version},1.9]</version>
+                  <version>[${jdk.version},12.0]</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
