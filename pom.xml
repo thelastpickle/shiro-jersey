@@ -63,12 +63,11 @@
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-web</artifactId>
       <version>${shiro.version}</version>
-      <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>jakarta.servlet</groupId>
       <artifactId>jakarta.servlet-api</artifactId>
-      <version>6.0.0</version>
+      <version>5.0.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -142,7 +141,7 @@
     <jersey.version>3.1.5</jersey.version>
     <jetty.version>11.0.25</jetty.version>
     <shiro.version>2.0.4</shiro.version>
-    <jdk.version>11.0</jdk.version>
+    <jdk.version>11</jdk.version>
   </properties>
 
   <build>
